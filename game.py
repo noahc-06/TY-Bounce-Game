@@ -5,6 +5,7 @@ from paddle import Paddle
 import time
 import random
 
+
 class Bricks:
     def __init__(self, canvas, color):
         self.canvas = canvas
@@ -62,7 +63,9 @@ def start_game(event):
                     root.update()
                     time.sleep(0.01)
                     if ball.hit==95:
+                        playsound('images/yt5s.io - Kulusevski Tottenham Song (128 kbps).mp3')
                         # You won message and colour
+              
                         canvas.create_text(250, 250, text="YOU WON !!", fill="yellow", font="Consolas 24 ")
                         root.update_idletasks()
                         root.update()
@@ -93,6 +96,6 @@ def start_game(event):
 
 # Initial text in screen (x,y), and Start Button
 root.bind_all("<Return>", start_game)
-canvas.create_text(250, 250, text="Press Enter to start Game!!", fill="red", font="Consolas 18")
+canvas.create_text(250, 400, text="Press Enter to start Game!!", fill="yellow", font="Consolas 18")
 root.mainloop()
         

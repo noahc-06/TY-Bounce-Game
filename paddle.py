@@ -2,7 +2,7 @@ class Paddle:
     def __init__(self, canvas, color):
         self.canvas = canvas
         # Paddle size x y axis
-        self.id = canvas.create_rectangle(0, 0, 100, 10, fill=color)
+        self.id = canvas.create_rectangle(0, 0, 250, 10, fill=color)
         self.canvas.move(self.id, 200, 485)
         self.x = 0
         self.pausec=0

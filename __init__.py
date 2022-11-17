@@ -1,4 +1,11 @@
+
+
+# import required module
+from playsound import playsound
+
 from tkinter import *
+
+
 
 root = Tk()
 # Title of the game
